@@ -1,9 +1,9 @@
 <h1 id="title">People</h1>
-<ul>
-{{#each model as |person|}}
-{{#unless person.isNew}}
-<li>{{#link-to 'person' person}}{{person.fullName}}{{/link-to}}</li>
-{{/unless}}
-{{/each}}
+<ul class="persons">
+	{{#each model as |person|}}
+		{{#unless person.isNew}}
+			<li>{{#link-to 'person' person}}{{person.fullName}}{{/link-to}}</li>
+		{{/unless}}
+	{{/each}}
 </ul>
 {{outlet}}

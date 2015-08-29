@@ -21,7 +21,7 @@ test('visiting /persons/new', function(assert) {
   });
 });
 
-test('new person appears first', function(assert) {
+test('new person appears last', function(assert) {
   assert.expect(1);
   var firstName = 'Harry S',
       lastName = 'Truman';
