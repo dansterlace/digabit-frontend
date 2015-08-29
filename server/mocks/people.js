@@ -4,7 +4,15 @@ module.exports = function(app) {
 
   peopleRouter.get('/', function(req, res) {
     res.send({
-      'people': []
+      'people': [
+      {id: 0, firstName: 'George', lastName: 'Washington', },
+      {id: 1, firstName: 'John', lastName: 'Adams'},
+      {id: 2, firstName: 'Thomas', lastName: 'Jefferson'},
+      {id: 3, firstName: 'James', lastName: 'Madison'},
+      {id: 4, firstName: 'James', lastName: 'Monroe'},
+      {id: 5, firstName: 'John Quincy', lastName: 'Adams'},
+      {id: 6, firstName: 'Andrew', lastName: 'Jackson'}
+      ]
     });
   });
 

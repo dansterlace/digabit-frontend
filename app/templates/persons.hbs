@@ -1,7 +1,7 @@
 <h1 id="title">People</h1>
 <ul>
-{{#each people as |person|}}
-<li>{{person.name}}</li>
+{{#each model as |person|}}
+<li>{{#link-to 'person' person}}{{person.fullName}}{{/link-to}}</li>
 {{/each}}
 </ul>
 {{outlet}}
