@@ -1,7 +1,16 @@
 <h1>New Person</h1>
 <form>
-  {{input id='firstName' type='text' value=firstName}}
-  {{input id='lastName' type='text' value=lastName}}
-  <button class="submit" {{action 'addPerson'}}>Add New Person</button>
+	<div class="form-group">
+  		<label for='firstName'>First Name</label>
+  		{{input id='firstName' class='form-control' type='text' value=firstName}}
+  	</div>
+  	<div class="form-group">
+  		<label for='lastName'>LastName</label>
+  		{{input id='lastName' class='form-control' type='text' value=lastName}}
+  	</div>
+  	<div class="form-group">
+  		AVATAR SELECTOR
+  	</div>
+  	<button type="submit" class="submit btn btn-default" {{action 'addPerson'}}>Add New Person</button>
 </form>
 {{outlet}}
