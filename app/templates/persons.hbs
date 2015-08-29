@@ -1,0 +1,12 @@
+<h1 id="title">People</h1>
+<form>
+<ul class="persons list-unstyled">
+	{{#each model as |person|}}
+		{{#unless person.isNew}}
+			<li>{{person-component person=person map=controller.selected}}</li>
+		{{/unless}}
+	{{/each}}
+</ul>
+<button {{action 'makeFriends'}} class="btn btn-default">Make Friend</button>
+</form>
+{{outlet}}

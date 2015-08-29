@@ -1,0 +1,21 @@
+<h1>New Person</h1>
+<form>
+	<div class="form-group">
+  		<label for='firstName'>First Name</label>
+  		{{input id='firstName' class='form-control' type='text' value=firstName}}
+  	</div>
+  	<div class="form-group">
+  		<label for='lastName'>LastName</label>
+  		{{input id='lastName' class='form-control' type='text' value=lastName}}
+  	</div>
+  	<div class="form-group">
+  		{{#x-select value=model.avatar}}
+  		  	{{#x-option value="assets/images/01_150.gif"}}Image 1{{/x-option}}
+            {{#x-option value="assets/images/02_150.gif"}}Image 2{{/x-option}}
+            {{#x-option value="assets/images/03_150.gif"}}Image 3{{/x-option}}
+            {{#x-option value="assets/images/04_150.gif"}}Image 4{{/x-option}}
+  		{{/x-select}}
+  	</div>
+  	<button type="submit" class="submit btn btn-default" {{action 'addPerson'}}>Add New Person</button>
+</form>
+{{outlet}}
