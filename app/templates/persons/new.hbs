@@ -1,0 +1,7 @@
+<h1>New Person</h1>
+<form>
+  {{input id='firstName' type='text' value=firstName}}
+  {{input id='lastName' type='text' value=lastName}}
+  <button class="submit" {{action 'add'}}>Add New Person</button>
+</form>
+{{outlet}}
