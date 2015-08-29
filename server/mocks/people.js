@@ -17,6 +17,11 @@ module.exports = function(app) {
   });
 
   peopleRouter.post('/', function(req, res) {
+    res.send({
+      'people': {
+        id:7, firstName: 'Harry S', lastName: 'Truman'
+      }
+    });
     res.status(201).end();
   });
 
