@@ -17,7 +17,6 @@ test('visiting /person', function(assert) {
 
   andThen(function() {
     assert.equal(currentURL(), '/person/0');
-    assert.equal(find("#title").text(), "Presidents");
-    //assert.equal(file("#fullName").text(), "George Washington");
+    assert.equal(find("#title").text(), "Person");
   });
 });
