@@ -31,7 +31,7 @@ test('new person appears first', function(assert) {
   click('button.submit');
 
   andThen(function() {
-    assert.equal(find('ul.persons li:first').text(), firstName + ' ' + lastName);
+    assert.equal(find('ul.persons li:last').text(), firstName + ' ' + lastName);
   });
 
 });
