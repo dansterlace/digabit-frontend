@@ -5,7 +5,7 @@ module.exports = function(app) {
   peopleRouter.get('/', function(req, res) {
     res.send({
       'people': [
-      {id: 0, firstName: 'George', lastName: 'Washington', "friends": [1, 2, 3, 4, 5, 6]},
+      {id: 0, firstName: 'George', lastName: 'Washington', avatar: 'assets/images/01_150.gif', 'friends': [1, 2, 3, 4, 5, 6]},
       {id: 1, firstName: 'John', lastName: 'Adams'},
       {id: 2, firstName: 'Thomas', lastName: 'Jefferson'},
       {id: 3, firstName: 'James', lastName: 'Madison'},
