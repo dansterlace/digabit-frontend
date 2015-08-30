@@ -7,6 +7,6 @@ export default DS.Model.extend({
 	fullName: function() {
 		return this.get('firstName') + ' ' + this.get('lastName');
 	}.property('firstName','lastName'),
-	friends: DS.hasMany('person')
+	friends: DS.hasMany('person', {async: true})
 
 });
