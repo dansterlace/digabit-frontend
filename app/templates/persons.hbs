@@ -1,9 +1,11 @@
 <h1 id="title">People</h1>
-<ul class="persons">
+<form>
+<ul class="persons list-unstyled">
 	{{#each model as |person|}}
 		{{#unless person.isNew}}
-			<li>{{#link-to 'person' person}}{{person.fullName}}{{/link-to}}</li>
+			<li>{{input type="checkbox"}}{{#link-to 'person' person}}{{person.fullName}}{{/link-to}}</li>
 		{{/unless}}
 	{{/each}}
 </ul>
+</form>
 {{outlet}}
