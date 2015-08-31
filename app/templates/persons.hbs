@@ -3,7 +3,7 @@
 <ul class="persons list-unstyled">
 	{{#each model as |person|}}
 		{{#unless person.isNew}}
-			<li>{{input type="checkbox"}}{{#link-to 'person' person}}{{person.fullName}}{{/link-to}}</li>
+			<li>{{person-component person=person personController=controller}}</li>
 		{{/unless}}
 	{{/each}}
 </ul>
