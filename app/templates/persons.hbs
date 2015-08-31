@@ -3,7 +3,7 @@
 <ul class="persons list-unstyled">
 	{{#each model as |person|}}
 		{{#unless person.isNew}}
-			<li>{{person-component person=person personController=controller}}</li>
+			<li>{{person-component person=person map=controller.selected}}</li>
 		{{/unless}}
 	{{/each}}
 </ul>
