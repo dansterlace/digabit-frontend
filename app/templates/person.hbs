@@ -2,9 +2,13 @@
 <h2 id="fullName">{{model.fullName}}</h2>
 <img src="{{model.avatar}}"/>
 <h3 id="friends">Friends</h3>
+
+<button {{action 'toggleFriendsShown'}} class="btn btn-default">Show Friends</button>
+{{#if areFriendsShown}}
 <ul>
-{{#each model.friends as |friend|}}
-<li>{{friend.fullName}}</li>
-{{/each}}
+	{{#each model.friends as |friend|}}
+	<li>{{friend.fullName}}</li>
+	{{/each}}
 </ul>
+{{/if}}
 {{outlet}}
